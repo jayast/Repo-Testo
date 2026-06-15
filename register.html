@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    form{
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+    .sub {
+        background-color: chocolate;
+        box-shadow: 2px;
+        padding-bottom: 20px;
+    }
+    label{
+        margin: 40px;
+    }
+    input{
+        padding: 10px;
+        color: black;
+        border: 3px solid black;
+        border-radius: 30px;
+    }
+    input:hover{
+        
+        border: 5px solid aquamarine;
+        border-color: cadetblue;
+        color: black;
+    }
+    textarea{
+        padding: 10px;
+        color: black;
+        border: 3px solid black;
+        border-radius: 20px;
+    }
+    textarea:hover{
+        
+        border: 5px solid aquamarine;
+        border-color:burlywood ;
+        border-radius: 20px;
+    }
+    
+</style>
+<body>
+    <form class="sub" action="" method="get">
+        <fieldset>
+            <legend>Personal Details</legend>
+        <label for="">Name : </label><input type="text" placeholder="Enter Your Name"><br><br>
+        <label for="">Email : </label><input type="email" placeholder="Enter Your Email"><br><br>
+        <label for="">Password : </label><input type="password" placeholder="Enter Your Password"><br><br>
+        <input type="radio" name="Gender">Male
+        <input type="radio" name="Gender">Female <br><br>
+        <input type="checkbox" name="Skills">I Agree <br><br>
+        <select name="Course">
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="MERN">MERN</option>
+        </select><br><br>
+        <input type="color" name="Profile color">colors <br><br>
+        <textarea rows="4" cols="30" placeholder="Your Feedback..."></textarea><br><br>
+        <input class="btn" type="submit" value="submit" style="margin: 20px;border-color: rgb(94, 45, 55);padding: 10px 20px;"> 
+        <input type="reset" value="reset"style="margin: 20px; border-color: rgb(94, 45, 55);padding: 10px 20px;">
+        </fieldset>
+    </form>
+</body>
+</html>
